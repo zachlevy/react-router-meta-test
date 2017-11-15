@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node build-static-meta-routes.js",
     "test": "react-scripts test --env=jsdom",
     "deploy": "npm run build && aws s3 sync build/ s3://react-router-meta-test",
     "eject": "react-scripts eject"
