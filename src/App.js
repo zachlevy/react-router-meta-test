@@ -18,7 +18,7 @@ class App extends Component {
         </p>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/test/' component={Test}/>
+          <Route path='/test-meta/' component={Test}/>
         </Switch>
       </div>
     );
