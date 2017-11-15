@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import Home from './Home'
 import Test from './Test'
 
@@ -19,6 +19,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/test-meta/' component={Test}/>
+          <Route path='/404/test-meta/' render={() => <Redirect to='/test-meta/'/>} />
         </Switch>
       </div>
     );
