@@ -4,7 +4,6 @@ import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom'
 import Home from './Home'
 import Test from './Test'
-import FourOhFour from './FourOhFour'
 
 class App extends Component {
   render() {
@@ -20,7 +19,6 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/test-meta/' component={Test}/>
-          <Route path='/404/test-meta/' component={FourOhFour} />
         </Switch>
       </div>
     );
